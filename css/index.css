@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body {
+    background-color: #fefcfc;
+    font-family: "Poppins", serif;
+    height: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+nav:nth-child(1) {
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 900px;
+}
+.nav-items h5:hover{
+    transition: 0.3s;
+    color: #fe5e35;
+    text-decoration: underline;
+}
+.nav-item.active-item {
+    color: orangered;
+    font-weight: bold;
+}
+.nav-item {
+    margin-left: 120px;
+}
+div.intro-section {
+    display: flex;
+    flex-direction: row;
+}
+div.left-section {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+h3 {
+    font-size: 30px;
+}
+h3 img {
+    margin-left: 15px;
+}
+h1 {
+    font-size: 80px;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+div.sub-headlines {
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-family: 'Roboto Mono';
+}
+.sub-headline img{
+    background-color: orangered;
+    border-radius: 50%;
+}
+p.text {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.action-btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    height: 50px;
+}
+.action-btn {
+    margin-right: 20px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: #ff4a1c;
+    color: #fefcfc;
+    border: 0;
+    font-size: 20px;
+}
+.action-btn:hover{
+    color: #50fe39;
+    border: #fe6139;
+    cursor: pointer;
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+.headphone-div {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+img[src="./images/discount.svg"] {
+   position: absolute;
+   top: 43vh;
+   left: 55vw;
+}
+
+.discount-content {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto mono", serif;
+    margin-top: 35vh;
+    z-index: +1;
+    color: #ffffff;
+}
+h4 {
+    font-size: 25px;
+}
+h6 {
+    font-size: 65px;
+   
+}
+img[src="./images/headphones.jpg" ] {
+   margin-top: 5vh;
+   margin-right: 8vw;
+   width: 450px;
+    
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    margin-right: 90px;
+    
+}
+.right-section .dots .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 20px;
+   
+}
+  .yellow-dot {
+    background-color: #fbd104;
+}
+ .tomato-dot {
+    background-color: #fe5e35;
+}
+ .black-dot {
+    background-color: #000000;
+}
+.right-section .action-btn {
+    background-color: #fe6139;
+    margin-left: 220px;
+    color:#ffffff;
+    padding: 10px;
+    margin-block: 20px;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;   
+    cursor: pointer;
+}
+/*------------------ media query section  -------------------------*/
+@media screen and (min-width: 1200px) {
+    .left-section{
+     width: 100%;
+    }
+ }
+ /* media-2 */
+ @media screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+      }
+    .nav-items{
+         display: none;
+     }
+     .intro-section{
+         display: flex;
+         flex-direction: column-reverse;
+         width: 100vh;
+     }
+     .left-section{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .left-section h3{
+        margin-left: -170px;
+     }
+     .sub-headline {
+        margin-left: -160px;
+     }
+     .text{
+         display: flex;
+         justify-content: center;
+     }
+     img[src="./images/discount.svg"] {
+            position: absolute;
+            top: 75vh;
+            left: 80vw;
+            width: 150px;
+     }
+     .discount-content h4{
+        position: absolute;
+        top: 80vh;
+        left: 85vw;
+     }
+     .discount-content h6{
+        position: absolute;
+        top: 84vh;
+        left: 85vw;
+        font-size: 50px;
+     }
+     .right-section{
+        display: flex;
+        flex-direction: column;
+     }
+     img[src="./images/headphones.jpg" ] {
+        margin-top: 12vh;
+        margin-left: -25vw;
+        width: 200px;
+     }
+     .dots{
+        position: absolute;
+        left: 250px;
+        top: 135vh;
+     }
+     .right-section .action-btn{
+        display: none;
+     }
+     
+    }
